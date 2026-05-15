@@ -42,7 +42,7 @@
             </a>
 
             <nav class="site-nav" aria-label="Primary">
-                <a href="#create">Create Resume</a>
+                <a href="./create-resume.html" target="_blank" rel="noreferrer">Create Resume</a>
                 <a href="#features">Features</a>
                 <a href="#screens">Screens</a>
                 <a href="#reviews">Reviews</a>
@@ -63,11 +63,11 @@
                     </p>
 
                     <div class="hero-actions">
-                        <a class="button button-primary" href="#create">
-                            Create Resume
-                        </a>
-                        <a id="play-store-link" class="button button-secondary" href="#" target="_blank" rel="noreferrer">
+                        <a id="play-store-link" class="button button-primary" href="#" target="_blank" rel="noreferrer">
                             View on Google Play
+                        </a>
+                        <a class="button button-secondary" href="./create-resume.html" target="_blank" rel="noreferrer">
+                            Create Resume
                         </a>
                     </div>
 
@@ -115,187 +115,6 @@
                     <strong>Designed for quick decisions.</strong>
                     <p>A lightweight mobile experience with stronger value for paid upgrades.</p>
                 </article>
-            </div>
-        </section>
-
-        <section id="create" class="content-section builder-section">
-            <div class="container">
-                <div class="builder-shell">
-                    <div class="builder-topbar">
-                        <div>
-                            <div class="eyebrow">Create Resume</div>
-                            <h2>Build a job-ready application kit.</h2>
-                            <p>
-                                Fill your profile once, tailor it for a vacancy, then generate a
-                                resume PDF, cover letter, and recruiter intro from the same workspace.
-                            </p>
-                        </div>
-                        <div class="builder-status">
-                            <span id="api-mode-badge">Demo preview</span>
-                            <strong>Web builder</strong>
-                        </div>
-                    </div>
-
-                    <div class="builder-grid">
-                        <form id="resume-builder-form" class="resume-builder" novalidate>
-                            <div class="builder-progress" aria-label="Resume builder progress">
-                                <span class="progress-step is-active">Profile</span>
-                                <span class="progress-step">Experience</span>
-                                <span class="progress-step">Target</span>
-                                <span class="progress-step">Generate</span>
-                            </div>
-
-                            <div class="builder-panel">
-                                <div class="panel-heading">
-                                    <span>01</span>
-                                    <div>
-                                        <h3>Candidate profile</h3>
-                                        <p>Keep it clear, scannable, and ready for ATS parsing.</p>
-                                    </div>
-                                </div>
-
-                                <div class="builder-fields two-columns">
-                                    <label class="field">
-                                        <span>Full name</span>
-                                        <input id="resume-name" name="name" type="text" value="Alex Morgan" required>
-                                    </label>
-                                    <label class="field">
-                                        <span>Target role</span>
-                                        <input id="resume-role" name="role" type="text" value="Product Manager" required>
-                                    </label>
-                                    <label class="field">
-                                        <span>Email</span>
-                                        <input id="resume-email" name="email" type="email" value="alex@example.com" required>
-                                    </label>
-                                    <label class="field">
-                                        <span>Location</span>
-                                        <input id="resume-location" name="location" type="text" value="Warsaw, Poland">
-                                    </label>
-                                    <label class="field">
-                                        <span>Phone</span>
-                                        <input id="resume-phone" name="phone" type="text" value="+48 000 000 000">
-                                    </label>
-                                    <label class="field">
-                                        <span>Output language</span>
-                                        <select id="resume-language" name="language">
-                                            <option value="English" selected>English</option>
-                                            <option value="Ukrainian">Ukrainian</option>
-                                            <option value="Russian">Russian</option>
-                                            <option value="German">German</option>
-                                            <option value="Polish">Polish</option>
-                                        </select>
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="builder-panel">
-                                <div class="panel-heading">
-                                    <span>02</span>
-                                    <div>
-                                        <h3>Experience signal</h3>
-                                        <p>Turn rough history into a sharper value story.</p>
-                                    </div>
-                                </div>
-
-                                <div class="builder-fields">
-                                    <label class="field">
-                                        <span>Professional summary</span>
-                                        <textarea id="resume-summary" name="summary" rows="4">Product-minded operator with 5+ years of experience launching digital services, improving conversion funnels, and coordinating design, engineering, and growth teams.</textarea>
-                                    </label>
-                                    <label class="field">
-                                        <span>Skills</span>
-                                        <textarea id="resume-skills" name="skills" rows="3">Product strategy, roadmap planning, customer interviews, analytics, A/B testing, SQL, stakeholder management, AI tools</textarea>
-                                    </label>
-                                    <label class="field">
-                                        <span>Recent experience</span>
-                                        <textarea id="resume-experience" name="experience" rows="5">Led a cross-functional team that shipped a subscription onboarding redesign and improved trial-to-paid conversion by 18%.
-Built weekly product analytics dashboards and turned customer support patterns into roadmap priorities.
-Partnered with engineering to reduce release cycle time from monthly batches to weekly launches.</textarea>
-                                    </label>
-                                    <label class="field">
-                                        <span>Education</span>
-                                        <input id="resume-education" name="education" type="text" value="B.A. Business Administration, 2018">
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="builder-panel">
-                                <div class="panel-heading">
-                                    <span>03</span>
-                                    <div>
-                                        <h3>Vacancy targeting</h3>
-                                        <p>Paste a job description when you want a stronger role match.</p>
-                                    </div>
-                                </div>
-
-                                <div class="builder-fields">
-                                    <label class="field">
-                                        <span>Job description</span>
-                                        <textarea id="resume-job" name="jobDescription" rows="5" placeholder="Paste the vacancy here to tailor the resume, cover letter, and intro message."></textarea>
-                                    </label>
-                                    <label class="field">
-                                        <span>Style</span>
-                                        <select id="resume-style" name="style">
-                                            <option value="professional" selected>Professional</option>
-                                            <option value="modern">Modern</option>
-                                            <option value="executive">Executive</option>
-                                            <option value="concise">Concise</option>
-                                        </select>
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="builder-actions">
-                                <button id="preview-resume-button" class="button button-secondary" type="button">Refresh Preview</button>
-                                <button id="generate-pdf-button" class="button button-primary" type="button">Generate PDF</button>
-                                <button id="generate-cover-button" class="button button-secondary" type="button">Cover Letter</button>
-                                <button id="generate-intro-button" class="button button-secondary" type="button">Intro Message</button>
-                            </div>
-
-                            <p id="builder-status-text" class="form-status" role="status" aria-live="polite"></p>
-                        </form>
-
-                        <aside class="builder-preview" aria-label="Resume preview and generated output">
-                            <div class="preview-toolbar">
-                                <div>
-                                    <span>Live Preview</span>
-                                    <strong id="preview-role">Product Manager</strong>
-                                </div>
-                                <button id="copy-output-button" class="icon-button" type="button" aria-label="Copy generated text">Copy</button>
-                            </div>
-
-                            <div id="resume-preview-card" class="resume-preview-card">
-                                <div class="resume-preview-head">
-                                    <h3 id="preview-name">Alex Morgan</h3>
-                                    <p id="preview-contact">Warsaw, Poland | alex@example.com | +48 000 000 000</p>
-                                </div>
-                                <div class="resume-preview-section">
-                                    <span>Summary</span>
-                                    <p id="preview-summary"></p>
-                                </div>
-                                <div class="resume-preview-section">
-                                    <span>Skills</span>
-                                    <p id="preview-skills"></p>
-                                </div>
-                                <div class="resume-preview-section">
-                                    <span>Experience</span>
-                                    <ul id="preview-experience"></ul>
-                                </div>
-                            </div>
-
-                            <div class="generated-output">
-                                <div class="panel-heading compact">
-                                    <span>AI</span>
-                                    <div>
-                                        <h3>Generated text</h3>
-                                        <p id="output-label">Cover letter and intro output will appear here.</p>
-                                    </div>
-                                </div>
-                                <pre id="generated-text-output">Ready when you are. Add a vacancy for a more tailored result.</pre>
-                            </div>
-                        </aside>
-                    </div>
-                </div>
             </div>
         </section>
 
@@ -468,7 +287,7 @@ Partnered with engineering to reduce release cycle time from monthly batches to 
             </div>
 
             <div class="footer-links">
-                <a href="#create">Create Resume</a>
+                <a href="./create-resume.html" target="_blank" rel="noreferrer">Create Resume</a>
                 <a id="footer-play-link" href="#" target="_blank" rel="noreferrer">Google Play</a>
                 <a id="footer-privacy-link" href="#" target="_blank" rel="noreferrer">Privacy Policy</a>
                 <a href="https://github.com/MoslyHarmless/CVBuilderPro" target="_blank" rel="noreferrer">GitHub</a>
