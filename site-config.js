@@ -3,5 +3,7 @@ window.OFFER_AI_SITE_CONFIG = Object.freeze({
     privacyPolicyUrl: "https://sites.google.com/view/cv-builder-pro-policy",
     contactEmail: "moslyharmless@gmail.com",
     formEndpoint: "",
-    githubUrl: "https://github.com/MoslyHarmless/CVBuilderPro"
+    githubUrl: "https://github.com/MoslyHarmless/CVBuilderPro",
+    backendBaseUrl: "",
+    builderAccessToken: ""
 });
