@@ -26,8 +26,6 @@
 }
 
 html {
-    min-height: 100%;
-    background: #020617;
     scroll-behavior: smooth;
 }
 
@@ -41,15 +39,6 @@ body {
         radial-gradient(circle at 85% 12%, rgba(137, 246, 210, 0.14), transparent 24%),
         linear-gradient(180deg, #030917 0%, #020617 36%, #04101f 100%);
     overflow-x: hidden;
-}
-
-body.privacy-page {
-    min-height: 100vh;
-    color-scheme: dark;
-    background:
-        radial-gradient(circle at 12% 0%, rgba(57, 208, 255, 0.24), transparent 34%),
-        radial-gradient(circle at 92% 16%, rgba(137, 246, 210, 0.16), transparent 28%),
-        linear-gradient(180deg, #020617 0%, #051528 48%, #020617 100%);
 }
 
 body::before {
@@ -963,7 +952,7 @@ section[id] {
 }
 
 .policy-hero {
-    padding: 42px 0 0;
+    padding: 72px 0 0;
 }
 
 .policy-hero-grid {
@@ -1020,11 +1009,6 @@ section[id] {
     align-items: start;
 }
 
-.policy-layout-single {
-    display: block;
-    max-width: 980px;
-}
-
 .policy-nav {
     position: sticky;
     top: 102px;
@@ -1049,9 +1033,6 @@ section[id] {
 
 .policy-card {
     padding: clamp(24px, 4vw, 42px);
-    background:
-        radial-gradient(circle at top left, rgba(57, 208, 255, 0.08), transparent 34%),
-        linear-gradient(145deg, rgba(12, 22, 39, 0.96), rgba(6, 13, 26, 0.95));
 }
 
 .policy-card section {
