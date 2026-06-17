@@ -3,391 +3,111 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Offer AI: Premium AI Resume Builder</title>
-    <meta
-        name="description"
-        content="Offer AI helps job seekers create business-ready resumes, ATS-focused application kits, cover letters, intro messages, and shareable resume links from a focused Android app."
-    >
-    <meta name="theme-color" content="#020617">
-    <meta property="og:title" content="Offer AI: Premium AI Resume Builder">
-    <meta
-        property="og:description"
-        content="A premium AI career workspace for resumes, ATS matching, cover letters, intro messages, templates, and public resume sharing."
-    >
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="./assets/img/feature-graphic.png">
+    <title data-i18n="title">Offer AI: Premium Resume Builder</title>
+    <meta name="description" content="Offer AI helps job seekers create business-ready resumes, ATS-focused application kits, and cover letters.">
+    <meta name="theme-color" content="#0F1829">
     <link rel="icon" type="image/png" href="./assets/img/app-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet"
-    >
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
-    <script defer src="./site-config.js"></script>
     <script defer src="./script.js"></script>
 </head>
 <body>
-    <div class="page-glow page-glow-left"></div>
-    <div class="page-glow page-glow-right"></div>
+    <div class="glow-bg"></div>
+    <div class="glow-bg glow-bg-alt"></div>
 
-    <header class="site-header">
-        <div class="container header-inner">
-            <a class="brand" href="#top" aria-label="Offer AI home">
-                <img src="./assets/img/app-icon.png" alt="Offer AI icon" class="brand-mark">
-                <span class="brand-copy">
-                    <span class="brand-name">Offer AI</span>
-                    <span class="brand-subtitle">Career Studio</span>
-                </span>
-            </a>
-
-            <nav class="site-nav" aria-label="Primary">
-                <a href="./create-resume.html" target="_blank" rel="noreferrer">Create Resume</a>
-                <a href="#new-release">New Release</a>
-                <a href="#features">Features</a>
-                <a href="#screens">Screens</a>
-                <a href="#privacy">Privacy</a>
-                <a href="#contact">Contact</a>
-            </nav>
+    <header class="navbar">
+        <div class="container nav-inner">
+            <div class="brand">
+                <img src="./assets/img/app-icon.png" alt="Offer AI" class="logo">
+                <span class="brand-text">Offer AI</span>
+            </div>
+            <div class="nav-actions">
+                <div class="nav-links">
+                    <a href="#features" data-i18n="nav_features">Features</a>
+                    <a href="#templates" data-i18n="nav_templates">Templates</a>
+                    <a href="./privacy.html" data-i18n="nav_privacy">Privacy</a>
+                </div>
+                <div class="lang-selector-wrapper">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="globe-icon"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    <select id="lang-selector">
+                        <option value="en">EN</option>
+                        <option value="ru">RU</option>
+                        <option value="uk">UK</option>
+                    </select>
+                </div>
+            </div>
         </div>
     </header>
 
-    <main id="top">
-        <section class="hero-section">
-            <div class="container hero-grid">
-                <div class="hero-copy">
-                    <div class="eyebrow">Offer AI</div>
-                    <h1>Premium AI resume builder for serious applications.</h1>
-                    <p class="hero-lead">
-                        Create a polished resume, match it to a vacancy, choose a professional
-                        template, and generate the full application kit from one mobile workspace.
-                    </p>
-
-                    <div class="hero-actions">
-                        <a id="play-store-link" class="button button-primary" href="#" target="_blank" rel="noreferrer">
-                            View on Google Play
-                        </a>
-                        <a class="button button-secondary" href="./create-resume.html" target="_blank" rel="noreferrer">
-                            Create Resume
-                        </a>
-                    </div>
-
-                    <div class="hero-pills" aria-label="Product highlights">
-                        <span>Tailored CV</span>
-                        <span>Application Kit</span>
-                        <span>ATS Match</span>
-                        <span>Premium Templates</span>
-                        <span>Cloud Drafts</span>
-                    </div>
-
-                    <div class="hero-note">
-                        Designed for job seekers who need business-quality output without slow,
-                        desktop-heavy resume software.
-                    </div>
+    <main>
+        <section class="hero container">
+            <div class="hero-content">
+                <h1 data-i18n="hero_title">Build your premium resume in minutes.</h1>
+                <p class="hero-subtitle" data-i18n="hero_subtitle">The ultimate career studio. Generate ATS-friendly resumes, cover letters, and track your success with AI.</p>
+                <div class="hero-actions">
+                    <a href="https://play.google.com/store/apps/details?id=com.maksymkasianov.offerai" class="btn-primary" data-i18n="btn_get_app">Get it on Google Play</a>
+                    <a href="./create-resume.html" class="btn-secondary" data-i18n="btn_web_version">Web Version</a>
                 </div>
-
-                <div class="hero-visual">
-                    <div class="hero-card hero-card-main">
-                        <img src="./assets/screens/02_application_kit.png" alt="Application Kit screen" loading="eager">
-                    </div>
-                    <div class="hero-card hero-card-float hero-card-left">
-                        <img src="./assets/screens/01_secure_entry.png" alt="Secure entry screen" loading="eager">
-                    </div>
-                    <div class="hero-card hero-card-float hero-card-right">
-                        <img src="./assets/screens/03_resume_builder.png" alt="Resume builder screen" loading="eager">
-                    </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="./assets/img/poster_hero.png" alt="Offer AI App Mockup">
                 </div>
             </div>
         </section>
 
-        <section class="stat-section">
-            <div class="container stat-grid">
-                <article class="surface-card stat-card">
-                    <span class="stat-label">Guided creation</span>
-                    <strong>Step-by-step resume flow.</strong>
-                    <p>Profile, experience, skills, templates, ATS match, and generation now feel structured and easier to finish.</p>
-                </article>
-                <article class="surface-card stat-card">
-                    <span class="stat-label">Premium output</span>
-                    <strong>Templates, PDF, and share links.</strong>
-                    <p>Choose from a growing template gallery, export PDF, and create a secure public resume link.</p>
-                </article>
-                <article class="surface-card stat-card">
-                    <span class="stat-label">AI productivity</span>
-                    <strong>Faster application documents.</strong>
-                    <p>Generate role-aware summaries, skills, cover letters, and intro messages from the same resume data.</p>
-                </article>
+        <section id="features" class="features container">
+            <div class="section-header center">
+                <h2 data-i18n="features_title">Unfair Advantage.</h2>
+                <p data-i18n="features_subtitle">Everything you need to land your dream job, packed into one beautiful app.</p>
             </div>
-        </section>
-
-        <section id="new-release" class="content-section release-section">
-            <div class="container release-grid">
-                <div class="section-heading release-heading">
-                    <div class="eyebrow">New release</div>
-                    <h2>Built to feel like a career workspace, not just a PDF exporter.</h2>
-                    <p>
-                        The latest version expands the resume builder with premium templates,
-                        ATS job matching, AI suggestions, public sharing, and a clearer guided flow.
-                    </p>
-                </div>
-
-                <div class="release-panel">
-                    <article class="release-item">
-                        <span>01</span>
-                        <div>
-                            <h3>Resume templates</h3>
-                            <p>One free professional style plus premium visual templates for different career contexts.</p>
-                        </div>
-                    </article>
-                    <article class="release-item">
-                        <span>02</span>
-                        <div>
-                            <h3>ATS match score</h3>
-                            <p>Compare your resume against a vacancy and see missing keyword opportunities before exporting.</p>
-                        </div>
-                    </article>
-                    <article class="release-item">
-                        <span>03</span>
-                        <div>
-                            <h3>Share resume link</h3>
-                            <p>Create a secure public resume preview link when you want to send a cleaner application fast.</p>
-                        </div>
-                    </article>
-                    <article class="release-item">
-                        <span>04</span>
-                        <div>
-                            <h3>Application Kit</h3>
-                            <p>Resume PDF, cover letter, and short intro message stay connected in one focused flow.</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="features" class="content-section">
-            <div class="container">
-                <div class="section-heading">
-                    <div class="eyebrow">Core flow</div>
-                    <h2>Everything needed to apply with confidence.</h2>
-                    <p>
-                        The product is built around practical output: clean data entry, premium PDF
-                        presentation, AI-assisted writing, and a complete application package.
-                    </p>
-                </div>
-
-                <div class="feature-grid">
-                    <article class="surface-card feature-card">
-                        <span class="feature-kicker">01</span>
-                        <h3>Guided resume builder</h3>
-                        <p>Move through profile, experience, education, skills, extra sections, templates, ATS, and generation.</p>
-                    </article>
-                    <article class="surface-card feature-card">
-                        <span class="feature-kicker">02</span>
-                        <h3>ATS job matching</h3>
-                        <p>Paste a job description and check fit, missing terms, and suggested improvements before export.</p>
-                    </article>
-                    <article class="surface-card feature-card">
-                        <span class="feature-kicker">03</span>
-                        <h3>Template gallery</h3>
-                        <p>Use a clean free template or unlock premium styles for executive, tech, compact, and classic resumes.</p>
-                    </article>
-                    <article class="surface-card feature-card">
-                        <span class="feature-kicker">04</span>
-                        <h3>AI suggestions library</h3>
-                        <p>Generate role-aware objectives, headlines, skills, and intro phrases in the active app language.</p>
-                    </article>
-                    <article class="surface-card feature-card">
-                        <span class="feature-kicker">05</span>
-                        <h3>Cover letter and intro</h3>
-                        <p>Create a supporting letter and a short recruiter message from the same resume context.</p>
-                    </article>
-                    <article class="surface-card feature-card">
-                        <span class="feature-kicker">06</span>
-                        <h3>Public resume link</h3>
-                        <p>Share a polished resume preview and PDF download link when you need a faster application handoff.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="content-section template-showcase">
-            <div class="container showcase-grid">
-                <div class="premium-poster poster-primary">
-                    <img src="./assets/screens/02_application_kit.png" alt="Offer AI Application Kit poster" loading="lazy">
-                    <div class="poster-copy">
-                        <span>Application Kit</span>
-                        <strong>Resume, letter, intro.</strong>
+            
+            <div class="features-split">
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">✨</div>
+                        <h3 data-i18n="feat_1_title">AI Generation</h3>
+                        <p data-i18n="feat_1_desc">Instantly craft professional summaries and experience bullet points using cutting-edge AI.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3 data-i18n="feat_2_title">ATS Matching</h3>
+                        <p data-i18n="feat_2_desc">Upload a job description and automatically tailor your resume to score 90%+ in ATS systems.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🚀</div>
+                        <h3 data-i18n="feat_3_title">Smart Export</h3>
+                        <p data-i18n="feat_3_desc">Export to beautiful, pixel-perfect PDFs or share a premium web link with recruiters instantly.</p>
                     </div>
                 </div>
-                <div class="premium-poster poster-secondary">
-                    <img src="./assets/screens/03_resume_builder.png" alt="Offer AI resume builder poster" loading="lazy">
-                    <div class="poster-copy">
-                        <span>Guided Builder</span>
-                        <strong>Cleaner flow. Better output.</strong>
-                    </div>
-                </div>
-                <div class="showcase-copy">
-                    <div class="eyebrow">Premium feel</div>
-                    <h2>Business-focused visuals for a business-focused result.</h2>
-                    <p>
-                        The interface keeps the dark, focused Offer AI brand while moving the product
-                        toward a more polished premium career tool: clearer steps, stronger templates,
-                        and better post-PDF actions.
-                    </p>
+                <div class="feature-poster">
+                    <img src="./assets/img/poster_features.png" alt="App Features">
                 </div>
             </div>
         </section>
 
-        <section id="screens" class="content-section screen-section">
-            <div class="container">
-                <div class="section-heading">
-                    <div class="eyebrow">Screens</div>
-                    <h2>Mobile-first, polished, and ready for real applications.</h2>
-                    <p>
-                        Clean hierarchy, strong contrast, and focused actions help users move from
-                        rough resume data to a complete application package quickly.
-                    </p>
+        <section id="templates" class="templates container">
+            <div class="templates-inner">
+                <div class="templates-content">
+                    <h2 data-i18n="templates_title">Premium Templates.</h2>
+                    <p data-i18n="templates_desc">Stand out from the crowd with gorgeous, HR-approved designs built right into the app. Easily switch styles with a single tap.</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.maksymkasianov.offerai" class="btn-primary" data-i18n="btn_get_app_small">Get the App</a>
                 </div>
-
-                <div class="screen-grid">
-                    <figure class="surface-card screen-card">
-                        <img src="./assets/screens/01_secure_entry.png" alt="Secure entry screen" loading="lazy">
-                        <figcaption>Secure entry and guest access</figcaption>
-                    </figure>
-                    <figure class="surface-card screen-card">
-                        <img src="./assets/screens/02_application_kit.png" alt="Application Kit screen" loading="lazy">
-                        <figcaption>Application Kit overview</figcaption>
-                    </figure>
-                    <figure class="surface-card screen-card">
-                        <img src="./assets/screens/03_resume_builder.png" alt="Resume builder screen" loading="lazy">
-                        <figcaption>Resume builder with AI support</figcaption>
-                    </figure>
-                    <figure class="surface-card screen-card">
-                        <img src="./assets/screens/04_cover_letter.png" alt="Cover letter screen" loading="lazy">
-                        <figcaption>Cover letter generation</figcaption>
-                    </figure>
-                    <figure class="surface-card screen-card">
-                        <img src="./assets/screens/05_intro_message.png" alt="Intro message screen" loading="lazy">
-                        <figcaption>Intro message generation</figcaption>
-                    </figure>
+                <div class="templates-image">
+                    <img src="./assets/img/poster_templates.png" alt="Premium Templates">
                 </div>
-            </div>
-        </section>
-
-        <section id="reviews" class="content-section">
-            <div class="container">
-                <div class="section-heading">
-                    <div class="eyebrow">Reviews</div>
-                    <h2>What people look for in this kind of app.</h2>
-                    <p>
-                        This section is styled for future real store feedback, while already showing
-                        the value themes the product is built around.
-                    </p>
-                </div>
-
-                <div class="review-grid">
-                    <article class="surface-card review-card">
-                        <div class="review-stars" aria-hidden="true">★★★★★</div>
-                        <h3>Cleaner first draft</h3>
-                        <p>
-                            A fast way to turn scattered profile information into a more professional
-                            starting point.
-                        </p>
-                    </article>
-                    <article class="surface-card review-card">
-                        <div class="review-stars" aria-hidden="true">★★★★★</div>
-                        <h3>Useful for real vacancies</h3>
-                        <p>
-                            Tailored CV tools matter most when the app helps a specific application
-                            feel more relevant, not just more polished.
-                        </p>
-                    </article>
-                    <article class="surface-card review-card">
-                        <div class="review-stars" aria-hidden="true">★★★★★</div>
-                        <h3>Everything in one flow</h3>
-                        <p>
-                            Resume, cover letter, and short intro message belong together when the
-                            goal is to apply faster from a phone.
-                        </p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="privacy" class="content-section privacy-preview-section">
-            <div class="container privacy-preview">
-                <div>
-                    <div class="eyebrow">Privacy</div>
-                    <h2>Privacy policy hosted with the app website.</h2>
-                    <p>
-                        Offer AI now uses a dedicated privacy policy page on this GitHub Pages site,
-                        so the Android app and store listing can point to one owned, editable source.
-                    </p>
-                </div>
-                <a id="privacy-link" class="button button-primary" href="./privacy.html">Read Privacy Policy</a>
-            </div>
-        </section>
-
-        <section id="contact" class="content-section contact-section">
-            <div class="container contact-grid">
-                <div class="contact-copy">
-                    <div class="eyebrow">Feedback</div>
-                    <h2>Send feedback or ask a question.</h2>
-                    <p>
-                        Use the form below to share product feedback, report a bug, or ask about the
-                        app. The contact route is lightweight so it works well on GitHub Pages.
-                    </p>
-
-                    <ul class="contact-points">
-                        <li>Useful for support, store review prep, and feature requests.</li>
-                        <li>Easy to switch later from mailto to Formspree or FormSubmit.</li>
-                        <li>Privacy Policy, Google Play, and support links stay editable from one config file.</li>
-                    </ul>
-                </div>
-
-                <form id="feedback-form" class="surface-card feedback-form" novalidate>
-                    <label class="field">
-                        <span>Your email</span>
-                        <input id="feedback-email" name="email" type="email" placeholder="name@example.com" required>
-                    </label>
-
-                    <label class="field">
-                        <span>Message</span>
-                        <textarea
-                            id="feedback-message"
-                            name="message"
-                            rows="6"
-                            placeholder="Tell us what you would like to improve, report, or ask."
-                            required
-                        ></textarea>
-                    </label>
-
-                    <div class="form-actions">
-                        <button class="button button-primary" type="submit">Send feedback</button>
-                        <a id="contact-email-link" class="button button-secondary" href="#">Email directly</a>
-                    </div>
-
-                    <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
-                </form>
             </div>
         </section>
     </main>
 
-    <footer class="site-footer">
-        <div class="container footer-inner">
-            <div>
-                <div class="footer-brand">Offer AI: Career Studio</div>
-                <p class="footer-copy">
-                    A focused mobile product for cleaner resumes, tailored applications, and faster
-                    follow-through.
-                </p>
-            </div>
-
+    <footer class="footer container">
+        <div class="footer-inner">
+            <span data-i18n="footer_rights">© 2026 Offer AI. All rights reserved.</span>
             <div class="footer-links">
-                <a href="./create-resume.html" target="_blank" rel="noreferrer">Create Resume</a>
-                <a id="footer-play-link" href="#" target="_blank" rel="noreferrer">Google Play</a>
-                <a id="footer-privacy-link" href="#" target="_blank" rel="noreferrer">Privacy Policy</a>
-                <a href="https://github.com/MoslyHarmless/CVBuilderPro" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="./privacy.html" data-i18n="footer_privacy">Privacy Policy</a>
+                <a href="mailto:moslyharmless@gmail.com" data-i18n="footer_contact">Contact</a>
             </div>
         </div>
     </footer>
